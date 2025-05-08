@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Md. Mizan | Portfolio</title>
+  <style>
+    :root {
+      --primary-color: #0077b6;
+      --secondary-color: #023e8a;
+      --light-color: #f1f1f1;
+      --dark-color: #222;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--light-color);
+      color: #333;
+    }
+
+    nav {
+      background-color: var(--dark-color);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary-color);
+    }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: var(--secondary-color);
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .project {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-left: 5px solid var(--primary-color);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .project h3 {
+      color: var(--secondary-color);
+      margin-bottom: 5px;
+    }
+
+    .resume {
+      text-align: center;
+    }
+
+    .resume a {
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .resume a:hover {
+      background-color: var(--primary-color);
+    }
+
+    .contact {
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .contact p, .contact a {
+      margin: 6px 0;
+      color: #333;
+    }
+
+    footer {
+      background-color: var(--dark-color);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media(max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        margin: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Md. Mizan</h1>
+    <p>Web Developer • Programmer • Tech Explorer</p>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm Md. Mizan, a Computer Science student with a passion for clean code, creative design, and building beautiful websites. I enjoy solving problems, learning new technologies, and turning ideas into interactive experiences on the web.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>💻 HTML5</li>
+      <li>🎨 CSS3</li>
+      <li>⚙️ JavaScript</li>
+      <li>🌐 React (Basics)</li>
+      <li>🐍 Python</li>
+      <li>📁 Git & GitHub</li>
+      <li>🧠 Problem Solving</li>
+      <li>🛠️ C++</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Personal Portfolio Website</h3>
+      <p>A responsive website to showcase my projects, skills, and resume. Built using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project">
+      <h3>To-Do List App</h3>
+      <p>A task manager app with add/delete/complete features using JavaScript and local storage.</p>
+    </div>
+    <div class="project">
+      <h3>Simple Calculator</h3>
+      <p>Basic calculator performing arithmetic operations, styled and functional with JavaScript DOM manipulation.</p>
+    </div>
+  </section>
+
+  <section id="resume" class="resume">
+    <h2>Resume</h2>
+    
+    <a href="#" target="_blank">Download Resume</a> <!-- Replace # with your actual link -->
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: md.mizan@khan.com</p>
+    <p>Phone: +91 987XXXXXXX</p>
+    </section>
+
+  <footer>
+    <p>&copy; 2025 Md. Mizan. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
